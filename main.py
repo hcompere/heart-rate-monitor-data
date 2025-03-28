@@ -47,12 +47,12 @@ def run(filename: str) -> None:
    
 
     graph_plot = "/Users/hachemingcompere/Downloads/hr_monitoring_data_processing/images/phase_graph.png"
-    plt.plot(filtered_data, label=filename)                     #makes a line plot of filtered and gives it the label of the source file name
+    plt.plot(filtered_data, label=filename)  #makes a line plot of filtered data and gives it the label of the source file name
     plt.title("Heart Rate Data")
     plt.xlabel("x-axis")
     plt.ylabel("BPM")
-    plt.legend()
-    plt.savefig(graph_plot) #couldn't figure out how to get it to save different images of the graphs so I just layered them and created a legend to differentiate the phases
+    plt.legend()                            #makes a legend 
+    plt.savefig(graph_plot)                 #saves the plot to an image file called phase_graph.png
     
 
     # calculate the average, maximum, and standard deviation of this file using the functions you've wrote
